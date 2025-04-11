@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto - Volá</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <section class="form-section">
+    <h2>Contacto - <span class="brand">Volá</span></h2>
+    <form action="enviar_formulario.php" method="POST">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="personas">Cantidad de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" required />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required />
+
+        <label for="fecha">¿Qué fecha querés viajar?</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="destino">Destino deseado:</label>
+        <input type="text" id="destino" name="destino" required />
+
+        <button type="submit">Enviar</button>
+    </form>
+    </section>
+
+    <section class="info-section">
+        <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>📧 <a href="mailto:contacto@vola.com.ar">contacto@vola.com.ar</a></p>
+        <p>📱 <a href="https://wa.me/5491123456789" target="_blank">WhatsApp: +54 9 11 2345 6789</a></p>
+        <p>📞 Teléfono: (011) 4567-8901</p>
+        <p>🌐 <a href="https://instagram.com/vola.argentina" target="_blank">Instagram: @vola.argentina</a></p>
+        <p>📘 <a href="https://facebook.com/vola.argentina" target="_blank">Facebook: /vola.argentina</a></p>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
