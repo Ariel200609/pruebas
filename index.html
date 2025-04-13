@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <section class="form-section">
-    <h2>Contacto - <span class="brand">Volá</span></h2>
+    <h2>Contacto - <span class="brand">Volá!</span></h2>
     <form action="enviar_formulario.php" method="POST">
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" required />
@@ -19,10 +19,9 @@
         <input type="email" id="email" name="email" required />
 
         <label for="personas">Cantidad de personas:</label>
-        <input type="number" id="personas" name="personas" min="1" required />
+        <input type="number" id="personas" name="personas" min="1"  max = "5" required />
 
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" min="0" required />
+        <div id="edades-extras" class="edades-container"></div>
 
         <label for="fecha">¿Qué fecha querés viajar?</label>
         <input type="date" id="fecha" name="fecha" required />
@@ -45,5 +44,6 @@
         </div>
     </section>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
